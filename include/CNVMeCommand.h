@@ -22,6 +22,9 @@ public:
 	ECODE	getLogPage(sNVME_CDW_GETLOGPAGE cmd);
 	ECODE	setFeatures(sNVME_CDW_SETFEATURES cmd);
 	ECODE	getFeatures(sNVME_CDW_SETFEATURES cmd);
+	
+	ECODE	sanitize(sNVME_CDW_SANITIZE cmd);
+	
 	//...
 	
 	ECODE	write(sNVME_CDW_IO cmd);
@@ -31,6 +34,8 @@ public:
 	ECODE	writeUncorrectable(sNVME_CDW_IO cmd);
 	ECODE	datasetManagement(sNVME_CDW_IO cmd);
 	ECODE	writeUncorrectable(sNVME_CDW_IO cmd);
+	
+	
 };
 
 #endif
